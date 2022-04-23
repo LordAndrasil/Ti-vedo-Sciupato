@@ -15,11 +15,12 @@ const suffix = [
 ];
 
 const btn = document.getElementById("btn-draw");
+const phrase = document.getElementById("phrase");
 
 function draw() {
-    const phrase = document.getElementById("phrase");
     const rndPrefx = prefix[Math.floor(Math.random() * prefix.length)];
     const rndSuffix = suffix[Math.floor(Math.random() * suffix.length)];
+    console.log("")
 
     phrase.textContent = `${rndPrefx} ${rndSuffix}`;
 }
